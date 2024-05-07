@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pinterest</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .card {
+            position: relative;
+            width: 200px;
+            height: 300px;
+        }
+
+        .card button {
+            position: absolute;
+            border-radius: 20px;
+            font-weight: bold;
+            cursor: pointer;
+            opacity: 0;
+        }
+
+        .card:hover img {
+            opacity: 0.5;
+        }
+
+        .card:hover button {
+            opacity: 1;
+        }
+
+        .card img {
+            border-radius: 20px;
+            width: 100%;
+        }
+
+        .save {
+            top: 10px;
+            right: 5px;
+            width: 80px;
+            height: 40px;
+            color: white;
+            background-color: red;
+        }
+
+        .link {
+            bottom: 10px;
+            left: 5px;
+            height: 30px;
+            width: 115px;
+            color: black;
+            background-color: lightgrey;
+        }
+
+        .share {
+            bottom: 10px;
+            right: 45px;
+            height: 30px;
+            width: 30px;
+            color: black;
+            background-color: lightgrey;
+        }
+
+        .menu {
+            bottom: 10px;
+            right: 10px;
+            height: 30px;
+            width: 30px;
+            color: black;
+            background-color: lightgrey;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div class="card">
+        <img src="https://picsum.photos/200/300"/>
+        <button class="save">Save</button>
+        <button class="link">
+            <ion-icon name="arrow-redo"></ion-icon><a href="https://picsum.photos">lorem picsum</a>
+        </button>
+        <button class="share">
+            <ion-icon name="share-outline"></ion-icon>
+        </button>
+        <button class="menu">
+            <ion-icon name="ellipsis-horizontal"></ion-icon>
+        </button>
+    </div>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
